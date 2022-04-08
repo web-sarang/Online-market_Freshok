@@ -70,3 +70,10 @@ $white: #FFFFFF;
   border: 1px solid $green-900;
   border-radius: 6px;
 }
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

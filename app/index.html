@@ -182,7 +182,7 @@
       </div>
     </section>
 
-    <section class="top-products">
+    <section class="top-products section">
       <div class="container">
         <h2 class="top-products__title title">Топовые товары</h2>
         <div class="top-products__filter filter">
@@ -536,24 +536,26 @@
       </div>
     </section>
 
-    <section class="banners">
+    <section class="banners section">
       <div class="container">
         <h2 class="sr-only"></h2>
         <div class="banners__inner">
-          <ul class="banners__list">
-            <li class="banners__item">
+          <ul class="banners__items">
+            <li class="banners__item" style="background-image: url('images/banners/fruits.jpg');">
               <div class="banners__suptitle">СВЕЖАЙШИЕ ФРУКТЫ</div>
-              <h3 class="banners__title title">НАЧНИ ФРУКТОВОЕ ЛЕТО
+              <h3 class="banners__title title banners__title--main">НАЧНИ ФРУКТОВОЕ ЛЕТО
                 ВСЕГО От 99 ₽ </h3>
-              <a class="banners__link" href="#">Перейти к покупкам</a>
+              <a class="banners__link banners__link--main" href="#">Перейти к покупкам</a>
             </li>
-            <li class="banners__item">
+
+            <li class="banners__item" style="background-image: url('images/banners/season-discount.jpg');">
               <div class="banners__suptitle">СЕЗОННАЯ РАСПРОДАЖА</div>
               <h3 class="banners__title title">ОВОЩЕПАД
                 ДО -50% </h3>
               <a class="banners__link" href="#">Перейти к покупкам</a>
             </li>
-            <li class="banners__item">
+
+            <li class="banners__item" style="background-image: url('images/banners/bread.png');">
               <div class="banners__suptitle">НЯМ-НЯМ</div>
               <h3 class="banners__title title">СВЕЖИЙ
                 ХЛЕБЧИК</h3>
@@ -564,13 +566,13 @@
       </div>
     </section>
 
-    <section class="promo">
+    <section class="promo section">
       <div class="container">
         <h2 class="promo__title title">Акции</h2>
         <div class="promo__filter filter">
           <button class="filter__btn">Все товары</button>
-          <button class="filter_btn filter">НовИНКИ</button>
-          <button class="filter_btn filter">ХИТЫ</button>
+          <button class="filter__btn">НовИНКИ</button>
+          <button class="filter__btn">ХИТЫ</button>
         </div>
 
         <div class="promo__content">
@@ -589,28 +591,95 @@
       </div>
     </section>
 
-    <section class="brands">
+    <section class="brands section">
       <div class="container">
         <h2 class="sr-only">Бренды-партнёры</h2>
         <ul class="brands__items">
-          <li class="brands__item"><a class="brands__link" href=""></a></li>
-          <li class="brands__item"><a class="brands__link" href=""></a></li>
-          <li class="brands__item"><a class="brands__link" href=""></a></li>
-          <li class="brands__item"><a class="brands__link" href=""></a></li>
-          <li class="brands__item"><a class="brands__link" href=""></a></li>
-          <li class="brands__item"><a class="brands__link" href=""></a></li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/sprite.svg" alt="спрайт">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/dr-pepper.svg" alt="доктор пеппер">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/coca-cola.svg" alt="кока-кола">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/pepsi.svg" alt="пепси">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/redbull.svg" alt="редбул">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/fanta.svg" alt="фанта">
+            </a>
+          </li>
       </div>
     </section>
 
-    <section class="news">
+    <section class="news section">
       <div class="container">
-        <h2 class="news__title title"></h2>
-        <a class="news__link" href="#"></a>
+        <div class="news__inner">
+          <h2 class="news__title title">НАШИ НОВОСТИ</h2>
+          <a class="news__all" href="#">ВСЕ НОВОСТИ</a>
+        </div>
+
         <div class="news__content">
           <ul class="news__items">
-            <li class="news__item"></li>
-            <li class="news__item"></li>
-            <li class="news__item"></li>
+            <li class="news__item">
+              <a class="news__link" href="#">
+                <div class="news__date">
+                  <span class="news__month">ИЮЛЬ</span>
+                  15
+                </div>
+                <div class="news__images-box">
+                  <img class="news__img" src="images/news/straberry.jpg" alt="фото клубники">
+                </div>
+                <p class="news__text">
+                  Событие этого лета: распродажа сезонных фруктов в онлайн-маркете ФрешОК. Торопись, пока всё не
+                  разобрали!
+                </p>
+              </a>
+            </li>
+            <li class="news__item">
+              <a class="news__link" href="#">
+                <div class="news__date">
+                  <span class="news__month"> МАЙ</span>
+                  07
+                </div>
+                <div class="news__images-box">
+                  <img class="news__img" src="images/news/mango.jpg" alt="фото манго">
+                </div>
+                <p class="news__text">
+                  Шикарнейший выбор манго в нашем онлайн-маркете
+                </p>
+              </a>
+            </li>
+            <li class="news__item">
+              <a class="news__link" href="#">
+                <div class="news__date">
+                  <span class="news__month">ФЕВРАЛЬ</span>
+                  20
+                </div>
+                <div class="news__images-box">
+                  <img class="news__img" src="images/news/pitahaiya.jpg" alt="фото питахайи">
+                </div>
+                <p class="news__text">
+                  Всё, что вы хотели знать о папайя
+                </p>
+              </a>
+            </li>
           </ul>
         </div>
       </div>

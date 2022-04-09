@@ -12,52 +12,52 @@ $silver-100:#F6F6F6;
 $white: #FFFFFF;
 
 %opensans-300 {
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'OpenSans';
   font-weight: 300;
 }
 
 %opensans-400 {
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'OpenSans';
   font-weight: 400;
 }
 
 %opensans-600 {
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'OpenSans';
   font-weight: 600;
 }
 
 %opensans-700 {
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'OpenSans';
   font-weight: 700;
 }
 
 %roboto-400 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   font-weight: 400;
 }
 
 %roboto-500 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   font-weight: 500;
 }
 
 %ruda-400 {
-  font-family: 'Ruda', sans-serif;
+  font-family: 'Ruda';
   font-weight: 400;
 }
 
 %ruda-600 {
-  font-family: 'Ruda', sans-serif;
+  font-family: 'Ruda';
   font-weight: 600;
 }
 
 %ruda-700 {
-  font-family: 'Ruda', sans-serif;
+  font-family: 'Ruda';
   font-weight: 700;
 }
 
 %ruda-900 {
-  font-family: 'Ruda', sans-serif;
+  font-family: 'Ruda';
   font-weight: 900;
 }
 
@@ -71,9 +71,9 @@ $white: #FFFFFF;
   border-radius: 6px;
 }
 
-@function max($numbers...) {
-  @return m#{a}x(#{$numbers});
-}
-@function min($numbers...) {
-  @return m#{i}n(#{$numbers});
-}
+// @function max($numbers...) {
+//   @return m#{a}x(#{$numbers});
+// }
+// @function min($numbers...) {
+//   @return m#{i}n(#{$numbers});
+// }

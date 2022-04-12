@@ -16,6 +16,33 @@ $(function() {
   });
 
 
-  var mixer = mixitup('.top-products__content');
+
+  var containerEl1 = document.querySelector('[data-ref="top-product-mixitup"]');
+  var containerEl2 = document.querySelector('[data-ref="promo-mixitup"]');
+
+  var mixer1 = mixitup(containerEl1, {
+    controls: {
+      scope: 'local'
+    },
+    classNames: {
+      block: 'mix-filter',
+      elementFilter: 'btn',
+      delineatorElement: '__',
+      delineatorModifier: '--'
+    }
+  });
+
+  var mixer2 = mixitup(containerEl2, {
+    controls: {
+      scope: 'local'
+    },
+    classNames: {
+      block: 'mix-filter',
+      elementFilter: 'btn',
+      delineatorElement: '__',
+      delineatorModifier: '--'
+    }
+  });
+
 
 });

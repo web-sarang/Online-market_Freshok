@@ -1,0 +1,26 @@
+.status {
+  margin-bottom: 5px;
+  
+  &__item {
+    display: none;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 1;
+
+    &--on {
+      display: block;
+    }
+
+    &--in-stock {
+      color: $green-900;
+    }
+
+    &--soon-end {
+      color: $red-900;
+    }
+
+    &--out-of-stoke {
+      color: $silver-600;
+    }
+  }
+}

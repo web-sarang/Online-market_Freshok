@@ -1,0 +1,43 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+  &__btn {
+   font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: $dark-500;
+    border-bottom: 3px solid transparent;
+    outline: transparent;
+    transition: color 0.3s;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+
+    &--active {
+      border-bottom: 3px solid $green-200;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px $green-200;
+      border-radius: 3px;
+    }
+
+    &:hover {
+      color: $green-900;
+    }
+
+    &:active {
+      border-bottom: 3px solid $green-200;
+      box-shadow: none;
+    }
+  }
+}

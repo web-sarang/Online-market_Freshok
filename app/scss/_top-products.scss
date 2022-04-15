@@ -1,0 +1,15 @@
+
+.top-products {
+  padding-bottom: 0;
+
+  &__title {
+    margin-bottom: 29px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 51px;
+  }
+}

@@ -1,0 +1,44 @@
+.quantity {
+  display: inline-flex;
+  justify-content: center;
+
+  &__counter {
+    display: block;
+    padding: 4px 13px;
+    background: rgba(99, 166, 14, 0.1);
+    font-size: 16px;
+line-height: 1;
+letter-spacing: 0.03em;
+color: $dark-500;
+  }
+
+  &__btn {
+    width: 24px;
+    height: 24px;
+    background-color: $green-900;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 16px;
+      height: 1.33px;
+      background-color: $white;
+      position: absolute;
+      top: 12px;
+      left: 4px;
+    }
+
+    &--plus {
+      &::after {
+        content: "";
+        width: 16px;
+        height: 1.33px;
+        background-color: $white;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 12px;
+        left: 4px;
+      }
+    }
+  }
+}

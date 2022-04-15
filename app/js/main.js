@@ -1,5 +1,5 @@
 $(function() {
-  $('.top-slider__inner').slick({
+  $('.top-slider__items').slick({
     arrows: true,
     dots: false,
     fade: true,
@@ -25,6 +25,43 @@ $(function() {
   $('.cart__clear-btn').on('click', function(){
     $('.cart__item').addClass('cart__item--remove');
   });
+
+$('data-fancybox').fancybox({
+  buttons : [
+    'slideShow',
+    'share',
+    'zoom',
+    'fullScreen',
+    'download',
+    'close'
+  ],
+  loop: true,
+  gutter : 10,
+  keyboard: true,
+  arrows: true,
+  infobar: true,
+  smallBtn: true,
+  toolbar: false,
+  protect: true,
+  modal: true,
+  idleTime: 3,
+  animationEffect: "zoom-in-out",
+  animationDuration: 600,
+  transitionDuration: 400,
+  slideClass: "myClass",
+  baseClass: "myclass",
+  slideShow: {
+    autoStart: true,
+    speed: 1000
+  },
+youtube : {
+  controls : 0,
+  showinfo : 0
+},
+  thumbs : {
+    autoStart : true
+  }
+});
 
   var containerEl1 = document.querySelector('[data-ref="top-product-mixitup"]');
   var containerEl2 = document.querySelector('[data-ref="promo-mixitup"]');

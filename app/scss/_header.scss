@@ -282,12 +282,11 @@
     top: 2px;
     left: 3px;
     z-index: 1;
-    width: 18px;
-    height: 18px;
+    padding: 4px;
     font-size: 10px;
-    line-height: 18px;
+    font-weight: 600;
+    line-height: 1;
     text-align: center;
-    letter-spacing: 0.03em;
     color: $red-900;
     background-color: $white;
     border-radius: 50%;
@@ -305,9 +304,9 @@
   background-color: $white;
   color: #000;
 
- &--active {
-  transform: translateY(0%);
- }
+  &--active {
+    transform: translateY(0%);
+  }
 
   &__top {
     padding: 19px 26px 12px 24px;
@@ -317,8 +316,8 @@
 
   &__close-btn {
     position: absolute;
-    top: 33px;
-    right: 26px;
+    top: 17px;
+    right: 10px;
   }
 
   &__title {
@@ -336,7 +335,7 @@
     width: 475px;
     height: 705px;
     padding: 12px;
-    background: #F6F6F6;
+    background: #f6f6f6;
 
     &--clear {
       display: none;
@@ -350,7 +349,7 @@
     padding: 12px;
     margin-bottom: 12px;
     background-color: $white;
-    border: 1px solid #C1C1C1;
+    border: 1px solid #c1c1c1;
     border-radius: 3px;
     position: relative;
 
@@ -361,10 +360,8 @@
 
   &__remove-btn {
     position: absolute;
-    top: 12px;
-    right: 12px; 
-    width: 12px;
-    height: 12px;
+    top: 0;
+    right: 0;
   }
 
   &__content {
@@ -373,24 +370,48 @@
     align-items: center;
   }
 
-  // &__body {
-
-  // }
-
   &__img {
     width: 60px;
     height: 60px;
     margin-right: 32px;
   }
 
+  &__name {
+    color: $dark-900;
+    margin-bottom: 5px;
+    @include line-clamp(2);
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    color: $dark-500;
+  }
+
   &__quantity-box {
     display: flex;
-  justify-content: flex-end;
-  align-items: center;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   &__quantity {
-   margin-right: 12px; 
+    margin-right: 12px;
+  }
+
+  &__price-total {
+    color: $dark-500;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  &__currency {
+    font-size: 14px;
+    align-self: flex-end;
   }
 
   &__total {

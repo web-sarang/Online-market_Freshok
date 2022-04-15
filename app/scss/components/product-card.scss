@@ -1,5 +1,5 @@
 .product-card {
-  padding-top: 57px;
+  padding-top: 55px;
   display: flex;
   flex-direction: column;
   background-color: $white;
@@ -106,6 +106,7 @@
     font-weight: 600;
     color: $dark-900;
     text-align-last: left;
+    @include line-clamp(3);
   }
 
   &__bottom {

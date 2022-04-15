@@ -145,74 +145,97 @@
                 <span class="user-nav__counter">12</span>
               </button>
             </li>
-</ul>
+          </ul>
 
-            <div class="user-nav__cart cart">
-              <div class="cart__top">
-                <h2 class="cart__title">Корзина</h2>
-                <button class="cart__clear-btn" type="button">очистить корзину</button>
+          <div class="user-nav__cart cart">
+            <div class="cart__top">
+              <h2 class="cart__title">Корзина</h2>
+              <button class="cart__clear-btn" type="button">очистить корзину</button>
 
-                <button class="cart__close-btn close-btn" type="button">
-                  <span class="sr-only">Кнопка закрытия корзины</span>
+              <button class="cart__close-btn close-btn" type="button">
+                <span class="sr-only">Кнопка закрытия корзины</span>
+              </button>
+            </div>
+
+            <ul class="cart__items">
+              <li class="cart__item ">
+                <button class="cart__remove-btn remove-btn" type="button">
+                  <span class="sr-only">Кнопка удаления товара из корзины</span>
                 </button>
-              </div>
 
-              <ul class="cart__items">
-                <li class="cart__item ">
-                  <button class="cart__remove-btn remove-btn" type="button">
-                    <span class="sr-only">Кнопка удаления товара из корзины</span>
-                  </button>
+                <div class="cart__content">
+                  <img class="cart__img" src="images/products/pineapple1.jpg" alt="ананас">
 
-                  <div class="cart__content">
-                    <img class="cart__img" src="images/products/pineapple1.jpg" alt="ананас">
-
-                    <div class="card__body">
-                      <h3 class="cart__name">Ананас, 1 кг</h3>
-                      <div class="cart__price prices">
-                        999
-                        <span>₽</span>
-                      </div>
+                  <div class="card__body">
+                    <h3 class="cart__name">Ананас, 1 кг</h3>
+                    <div class="cart__price prices">
+                      999<span class="cart__currency">₽</span>
                     </div>
-                  </div>
-
-                  <div class="cart__quantity-box">
-                    <div class="cart__quantity quantity">
-                      <button class="quantity__btn quantity__btn" type="button"></button>
-                      <button class="quantity__counter" type="button">2</but>
-                        <button class="quantity__btn quantity__btn--plus type=" button"></button>
-                    </div>
-
-                    <div class="cart__price-total">
-                      1999<span>₽</span>
-                    </div>
-                  </div>
-                </li>
-
-                <li class="cart__item">
-
-                </li>
-              </ul>
-
-              <div class="cart__bottom">
-                <div class="cart__total">
-                  <div class="cart__total-text">Товаров на сумму</div>
-                  <div class="cart__total-sum">
-                    2038
-                    <span>₽</span>
                   </div>
                 </div>
 
-                <button class="cart__order" type="button">
-                  Оформить заказ
+                <div class="cart__quantity-box">
+                  <div class="cart__quantity quantity">
+                    <button class="quantity__btn quantity__btn" type="button"></button>
+                    <button class="quantity__counter" type="button">2</but>
+                      <button class="quantity__btn quantity__btn--plus type=" button"></button>
+                  </div>
+
+                  <div class="cart__price-total">
+                    1998<span class="cart__currency">₽</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="cart__item ">
+                <button class="cart__remove-btn remove-btn" type="button">
+                  <span class="sr-only">Кнопка удаления товара из корзины</span>
                 </button>
+
+                <div class="cart__content">
+                  <img class="cart__img" src="images/products/pitahaya1.jpg" alt="ананас">
+
+                  <div class="card__body">
+                    <h3 class="cart__name">Питахайя красная с белой мякотью, 1шт</h3>
+                    <div class="cart__price prices">
+                      1019<span class="cart__currency">₽</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart__quantity-box">
+                  <div class="cart__quantity quantity">
+                    <button class="quantity__btn quantity__btn" type="button"></button>
+                    <button class="quantity__counter" type="button">2</but>
+                      <button class="quantity__btn quantity__btn--plus type=" button"></button>
+                  </div>
+
+                  <div class="cart__price-total">
+                    2038<span class="cart__currency">₽</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="cart__bottom">
+              <div class="cart__total">
+                <div class="cart__total-text">Товаров на сумму</div>
+                <div class="cart__total-sum">
+                  2038
+                  <span>₽</span>
+                </div>
               </div>
+
+              <button class="cart__order" type="submit">
+                Оформить заказ
+              </button>
             </div>
-          
+          </div>
+
         </div>
       </div>
     </nav>
   </header>
-
 
   <main class="main">
     <h1 class="sr-only">Онлайн-маркет ФРЕШОК</h1>
@@ -220,22 +243,25 @@
     <section class="top-slider">
       <h2 class="sr-only">Актуальные рекламные акции</h2>
 
-      <ul class="top-slider__inner">
+      <ul class="top-slider__items">
         <li class="top-slider__item" style="background-image: url('images/slider/slider1.jpg');">
-          <div class="top-slider__container container">
+          <div class="top-slider__item-inner">
             <button class="top-slider__arrow slider-arrow slider-arrow--prev" type="button">
               <span class="sr-only">Кнопка управления слайдером назад</span>
             </button>
-            <h3 class="top-slider__title">
-              Свежачок вам в хату
-              <span class="top-slider__subtitle">Скидка -50%</span>
-            </h3>
 
-            <p class="top-slider__text">
-              Только с 7 по 13 июля скидка на сезонные фрукты и овощи до 50%. Торопитесь!
-            </p>
+            <div class="top-slider__container container">
+              <h3 class="top-slider__title">
+                Свежачок вам в хату
+                <span class="top-slider__subtitle">Скидка -50%</span>
+              </h3>
 
-            <button class="top-slider__btn btn" type="button">Купить сейчас</button>
+              <p class="top-slider__text">
+                Только с 7 по 13 июля скидка на сезонные фрукты и овощи до 50%. Торопитесь!
+              </p>
+
+              <button class="top-slider__btn btn" type="button">Купить сейчас</button>
+            </div>
 
             <button class="top-slider__arrow slider-arrow slider-arrow--next" type="button">
               <span class="sr-only">Кнопка управления слайдером вперёд</span>
@@ -244,20 +270,23 @@
         </li>
 
         <li class="top-slider__item" style="background-image: url('images/slider/slide2.jpg');">
-          <div class="top-slider__container container">
+          <div class="top-slider__item-inner">
             <button class="top-slider__arrow slider-arrow slider-arrow--prev" type="button">
               <span class="sr-only">Кнопка управления слайдером назад</span>
             </button>
-            <h3 class="top-slider__title">
-              Накрути себе томатов
-              <span class="top-slider__subtitle">Акция: 3 кг по цене 1</span>
-            </h3>
 
-            <p class="top-slider__text">
-              Только с 12 по 15 июля скидка на домашние помидорчики
-            </p>
+            <div class="top-slider__container container">
+              <h3 class="top-slider__title">
+                Накрути себе томатов
+                <span class="top-slider__subtitle">Акция: 3 кг по цене 1</span>
+              </h3>
 
-            <button class="top-slider__btn btn" type="button">Купить сейчас</button>
+              <p class="top-slider__text">
+                Только с 12 по 15 июля скидка на домашние помидорчики
+              </p>
+
+              <button class="top-slider__btn btn" type="button">Купить сейчас</button>
+            </div>
 
             <button class="top-slider__arrow slider-arrow slider-arrow--next" type="button">
               <span class="sr-only">Кнопка управления слайдером вперёд</span>
@@ -266,17 +295,19 @@
         </li>
 
         <li class="top-slider__item" style="background-image: url('images/slider/slide3.jpg');">
-          <div class="top-slider__container container">
+          <div class="top-slider__item-inner">
             <button class="top-slider__arrow slider-arrow slider-arrow--prev" type="button">
               <span class="sr-only">Кнопка управления слайдером назад</span>
             </button>
 
-            <h3 class="top-slider__title">
-              Пусть остальные позеленеют от зависти
-              <span class="top-slider__subtitle">Распродажа зелени</span>
-            </h3>
+            <div class="top-slider__container container">
+              <h3 class="top-slider__title">
+                Пусть остальные позеленеют от зависти
+                <span class="top-slider__subtitle">Распродажа зелени</span>
+              </h3>
 
-            <button class="top-slider__btn btn" type="button">Купить сейчас</button>
+              <button class="top-slider__btn btn" type="button">Купить сейчас</button>
+            </div>
 
             <button class="top-slider__arrow slider-arrow slider-arrow--next" type="button">
               <span class="sr-only">Кнопка управления слайдером вперёд</span>
@@ -354,7 +385,8 @@
                 <span class="sr-only">Добавить в избранное</span>
               </button>
 
-              <a class="product-card__link-img" fancybox="galery" href="#">
+              <a class="product-card__link-img" data-fancybox="galery" data-width="800"
+                href="images/products/pineapple.jpg">
                 <img class="product-card__img" src="images/products/pineapple.jpg" alt="ананас">
               </a>
 
@@ -396,7 +428,8 @@
                 <span class="sr-only">Добавить в избранное</span>
               </button>
 
-              <a class="product-card__link-img" fancybox="galery" href="#">
+              <a class="product-card__link-img" data-fancybox="galery" data-width="800"
+                href="images/products/lemon.jpg">
                 <img class="product-card__img" src="images/products/lemon.jpg" alt="лимон">
               </a>
 
@@ -437,7 +470,8 @@
                 <span class="sr-only">Добавить в избранное</span>
               </button>
 
-              <a class="product-card__link-img" fancybox="galery" href="#">
+              <a class="product-card__link-img" data-fancybox="galery" data-width="800"
+                href="images/products/pitahaya.jpg">
                 <img class="product-card__img" src="images/products/pitahaya.jpg" alt="питахайя">
               </a>
 
@@ -478,7 +512,8 @@
                 <span class="sr-only">Добавить в избранное</span>
               </button>
 
-              <a class="product-card__link-img" fancybox="galery" href="#">
+              <a class="product-card__link-img" data-fancybox="galery" data-width="800"
+                href="images/products/ketchup.jpg">
                 <img class="product-card__img" src="images/products/ketchup.jpg" alt="кетчуп">
               </a>
 
@@ -520,8 +555,9 @@
                 <span class="sr-only">Добавить в избранное</span>
               </button>
 
-              <a class="product-card__link-img" href="#">
-                <img class="product-card__img" fancybox="galery" src="images/products/carrot.jpg" alt="морковь">
+              <a class="product-card__link-img" data-fancybox="galery" data-width="800"
+                href="images/products/carrot.jpg">
+                <img class="product-card__img" src="images/products/carrot.jpg" alt="морковь">
               </a>
 
               <div class="product-card__info">
@@ -561,7 +597,8 @@
                 <span class="sr-only">Добавить в избранное</span>
               </button>
 
-              <a class="product-card__link-img" fancybox="galery" href="#">
+              <a class="product-card__link-img" data-fancybox="galery" data-width="800"
+                href="images/products/orange-juice.jpg">
                 <img class=" product-card__img" src="images/products/orange-juice.jpg" alt="напиток красный апельсин">
               </a>
 
@@ -605,7 +642,8 @@
                 <span class="sr-only">Добавить в избранное</span>
               </button>
 
-              <a class="product-card__link-img" fancybox="galery" href="#">
+              <a class="product-card__link-img" data-fancybox="galery" data-width="800"
+                href="images/products/coffee.jpg">
                 <img class="product-card__img" src="images/products/coffee.jpg" alt="кофе">
               </a>
 
@@ -647,7 +685,8 @@
                 <span class="sr-only">Добавить в избранное</span>
               </button>
 
-              <a class="product-card__link-img" fancybox="galery" href="#">
+              <a class="product-card__link-img" data-fancybox="galery" data-width="800"
+                href="images/products/pepper.jpg">
                 <img class="product-card__img" src="images/products/pepper.jpg" alt="перец">
               </a>
 

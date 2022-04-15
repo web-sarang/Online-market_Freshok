@@ -1,0 +1,73 @@
+.banners {
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+  }
+
+  &__item {
+    padding: 76px 32px;
+    height: 300px;
+    text-align-last: left;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    &:nth-child(1) {
+      grid-column: span 2;
+      color: $white;
+    }
+  }
+
+  &__suptitle {
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &__title {
+    width: 70%;
+    margin-bottom: 10px;
+    font-family: "Ruda", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: normal;
+    color: $dark-500;
+    text-align: left;
+    &--main {
+      color: $white;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__link {
+    width: fit-content;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      bottom: -6px;
+      right: 0;
+      background-color: $dark-500;
+    }
+
+    &--main {
+      &::after {
+        background-color: $white;
+      }
+    }
+  }
+}

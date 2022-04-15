@@ -1,16 +1,17 @@
 .socials {
+  max-width: 163px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  &__item:not(:last-child) {
-    margin-right: 12px;
-  }
 
   &__link {
     display: block;
     width: 32px;
     height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     outline: transparent;
     transition: opacity 0.3s;
 
@@ -24,15 +25,8 @@
     }
 
     &:active {
+      filter: invert(5%) sepia(4%) saturate(1330%) hue-rotate(43deg) brightness(105%) contrast(86%);
       box-shadow: none;
-    }
-  }
-
-  &__img {
-    width: 32px;
-    height: 32px;
-    path {
-      fill: red;
     }
   }
 }

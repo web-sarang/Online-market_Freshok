@@ -1,15 +1,16 @@
 
 .top-products {
+  padding-top: 73px;
   padding-bottom: 0;
 
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 
   &__content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    margin-bottom: 48px;
+    margin-bottom: 51px;
   }
 }

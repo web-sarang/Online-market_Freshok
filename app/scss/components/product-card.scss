@@ -16,10 +16,12 @@
     width: 32px;
     height: 28px;
     border-radius: 3px;
-    background: url("../images/sprite.svg#card-heart") center center / cover
-      no-repeat;
+    background-image: url("../images/sprite.svg#card-heart");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 32px 29px;
     outline: transparent;
-    transition: background-image 0.3s;
+    transition: filter 0.3s;
     position: absolute;
     top: 17px;
     right: 12px;
@@ -29,13 +31,16 @@
     }
 
     &:hover {
-      path {
-        fill: rgb(255, 184, 0);
-      }
+      box-shadow: none;
+      filter: invert(33%) sepia(78%) saturate(1020%) hue-rotate(357deg)
+        brightness(100%) contrast(108%);
     }
 
     &:active {
+      filter: invert(33%) sepia(78%) saturate(1020%) hue-rotate(357deg)
+        brightness(100%) contrast(108%);
       box-shadow: none;
+      opacity: 0.5;
     }
   }
 
@@ -90,14 +95,14 @@
   }
 
   &__info {
-    padding: 18px;
+    padding: 20px 18px 18px;
     height: 135px;
     text-align: left;
   }
 
   &__name {
     height: 60px;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     font-weight: 600;
     color: $dark-900;
     text-align-last: left;
@@ -134,19 +139,19 @@
     }
   }
 
-  &__raiting {
-    padding-right: 16px;
+  &__rating {
+    padding-right: 20px;
     font-weight: 700;
     line-height: 1;
     position: relative;
-    
+
     &::after {
-      content: '';
+      content: "";
       width: 16px;
       height: 16px;
-      background: url('../images/sprite.svg#star') 0 0 / cover no-repeat;
+      background: url("../images/sprite.svg#star") 0 0 / cover no-repeat;
       position: absolute;
-      top: 0;
+      top: -1px;
       right: 0;
     }
   }

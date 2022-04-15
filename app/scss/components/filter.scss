@@ -1,17 +1,21 @@
 .filter {
+  max-width: 481px;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  margin-bottom: 48px;
+  justify-content: space-between;
+  margin: 0 auto 48px;
 
   &__item {
     &:not(:last-child) {
-      margin-right: 24px;
+      margin-right: 15px;
     }
   }
 
   &__btn {
-   font-weight: 700;
+    display: inline-block;
+    font-weight: 700;
     font-size: 15px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $dark-500;
     border-bottom: 3px solid transparent;

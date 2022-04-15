@@ -3,17 +3,15 @@
   height: 32px;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
 
   &__item {
     display: none;
     height: 16px;
     line-height: 1;
-    letter-spacing: 0.03em;
-
-
+    
     &--on {
-      display: block;
+      display: inline-block;
     }
 
     &--old {
@@ -33,5 +31,11 @@
         transform: rotate(-14.99deg);
       }
     }
+  }
+
+  &__currency {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
   }
 }

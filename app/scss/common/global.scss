@@ -41,6 +41,12 @@ body {
   padding: 0 15px;
 }
 
+.logo {
+  display: block;
+  flex: 0 0 200px;
+  outline: transparent;
+}
+
 .section {
   padding: 72px 0;
   text-align: center;
